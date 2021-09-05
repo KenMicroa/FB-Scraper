@@ -26,7 +26,7 @@ options.add_argument("disable-popup")
 options.add_argument('headless')  # Will not show browser window
 
 # Setting up Chrome Driver and bs4
-chrome_driver_path = "D:\Python Projects\Development\chromedriver.exe"
+chrome_driver_path = "chromedriver.exe" # add chrome drover Path
 driver = webdriver.Chrome(chrome_driver_path, options=options)
 response = requests.get(url=FB_URL, headers=headers)
 soup = BeautifulSoup(response.text, 'html.parser')
